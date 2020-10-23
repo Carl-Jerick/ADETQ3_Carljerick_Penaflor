@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ADETQ3_carljerick_penaflor/bin/Debug/netcoreapp3.1
+/ADETQ3_carljerick_penaflor/obj
