@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Enrollment.Models.admission>
+
+
+<div class="text-center">
+    <h3>Lyceum of Alabang</h3>
+    <h4>Class 2020-2021</h4>
+    <a class="btn btn-primary" asp-action="adform">ENROLL NOW!</a>
+</div>
+
+@if (Model.Any())
+{
+    <div class="panel-body">
+        <h2>List of Students:</h2>
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Student No.</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Enrollment.Models.admission r in Model)
+                {
+                    <tr>
+                        <td>@r.Name</td>
+                        <td>@r.No</td>
+                        <td>@r.Age</td>
+                        <td>@r.address</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+}
